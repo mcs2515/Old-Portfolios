@@ -1,0 +1,532 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+
+body{
+	position:relative;
+	margin: 0 auto;
+	font-family: Lato, sans-serif;
+	/*min-width: 912px;*/
+    background-color: lightslategrey;
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+
+#space{
+    top:0;
+    width: 100%;
+    height: 1pt;
+}
+
+#logo{
+    position: absolute;
+    margin: 0 auto;
+    width:100%;
+    height: auto;
+    text-align: center;
+    z-index: -5;
+}
+
+#drawing{
+    width: 135pt;
+    height: auto;
+    border: none;
+    margin: 10pt;
+}
+
+#home{ 
+    padding-top: 10pt;
+    margin: 0 4%;
+    z-index: 15;
+    opacity: 0;  
+}
+
+/*for the main menu section*/
+nav {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 35pt;
+  padding-bottom: 10pt;
+  margin-top: -2pt;
+}
+
+#here, #home{
+    color: black;
+    box-shadow: none;
+    background: none;
+    border: none;
+}
+
+#home{
+    z-index: 5;
+}
+
+#currentLink{
+    color: black;
+    cursor: default;
+}
+
+#gradient{
+    position: absolute;
+    width: 100%;
+    height: 45pt;
+    top: 50pt;
+    z-index: -10;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1)/*, inset 0 0 1px rgba(255, 255, 255, 0.6)*/;
+    border-top: 1px solid #cca300;
+    border-bottom: 1px solid #cca300;
+}
+
+nav ul {
+  text-align: center;
+  margin-bottom: 23pt;
+  padding: 5pt;
+}
+
+#about{
+    padding-right: 20pt;
+    padding-left: 25pt;
+}
+
+#gallery{
+    padding-right: 45.5pt;
+    padding-left: 41pt;
+}
+
+nav ul li{
+  font-weight: bold;
+  display: inline-block;
+}
+
+nav ul a {
+  font-family: "Lato";
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav li {
+  padding: 18px;
+  font-family: "Lato";
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  margin-top: 1px;
+}
+
+nav ul li:hover{
+  cursor:pointer;
+  transition: all .5s ease 0s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+
+a:hover{
+    color: rgba(0, 35, 122, 0.7);
+}
+
+/*for the mini menu section*/
+
+nav li:hover>ul{
+    visibility:visible;
+    opacity:1;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+nav li ul{   
+    position: absolute;
+    margin-top: 14.1pt;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+    margin-left: -25pt;
+    z-index: 10;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    visibility:hidden;
+    opacity:0;
+}
+
+nav ul ul li{
+    margin: 0pt;
+    padding-bottom: 3pt;
+    padding-top: 3pt;
+    display: block; 
+}
+
+.line{
+    position: relative;
+    margin: 0 auto;
+    border: 1pt solid rgba(255,255,255,0.25);
+    width:70%;
+    border-top: 1pt;
+    border-left: 1pt;
+    border-right: 1pt;
+    margin-bottom: 5pt;
+}
+
+li.line:hover{
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#galleries{ 
+    margin-left: -41pt;
+}
+
+.selected{
+    color: black;   
+}
+
+/*for the main content section*/
+#mainContent{
+    position: relative;
+    margin: 0 auto;
+    z-index: -1;
+    width: 55%;
+}
+
+#title{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 60%;
+}
+
+h1{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0) 100%);
+    color: rgba(0, 35, 122, .5);
+    margin-top: 50pt; /*effects the lightbox*/
+    font-size: 37pt; 
+    font-family: Indie Flower, sans-serif;
+    padding: 5pt;
+    margin-bottom: 50pt;
+}
+
+h2{
+    font-size: 30pt;
+    margin-top: 5pt;
+    margin-bottom: 0pt;
+    font-family: Indie Flower, sans-serif;
+    
+}
+
+h3{
+    font-size: 20pt;
+    font-family: Indie Flower, sans-serif;
+}
+
+.summary{
+    border-radius: 20pt;
+    padding: 10pt;
+    color:darkgrey;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.summary p{
+    padding-left: 6pt;
+    text-indent: 25pt;
+    font-size: 13pt;
+}
+
+footer{
+    margin-top: 87pt;
+    padding-bottom: 0pt;
+    width: 100%;
+    height: 97pt;
+	background-image: url("../media/misc/escheresque_ste.png");
+}
+
+#copyright{
+    margin-bottom: 0pt;
+	text-align: center;
+	font-size: 10pt;
+    padding-top: 20pt;
+    color: rgba(255,255,255, .5);
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------media 830*/
+@media screen and (max-width: 930px){
+    #logo{
+        position: relative;
+        margin: 0 auto;
+        background-color: rgba(255,255,255, .2);
+        border-radius: 130pt;
+        width: 120pt;
+        margin-top:10pt;
+        z-index: 5;
+    }
+    
+    h2{
+       font-size: 32pt;
+    }
+    
+    #drawing{ 
+        position: relative;
+        margin: 0 auto;
+        width: 120pt;
+    }
+    
+    #mainMenu{
+        padding: 0pt;
+    }
+    
+    #gradient{
+        top: 140pt;
+    }
+
+    #home{
+        display: none; 
+    }
+    
+    #title{
+        width: 90%;
+        margin-top: -5pt;
+        margin-bottom: -30pt;         
+    }
+    
+    h1{  
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0) 100%);
+        font-size: 30pt;
+    }
+    
+    
+    .line{
+        display: none;
+    }
+    
+    nav li:hover>ul{
+        padding: 0;
+        left:0;
+        right: 0;
+        display:inline-flex;
+    }
+    
+    nav ul a{
+        font-size: 12pt;
+        padding-left: 0pt;
+    }
+    
+    nav li{
+        font-size: 12pt;
+        padding-left: 5pt;
+        padding-right: 5pt;
+        padding-top: 15pt;
+        margin-left: 5pt;
+        margin-top: 2pt;
+    }
+    
+    #galleries li{
+        position: relative;
+        margin:  0 auto; 
+    }
+    
+    #me li{
+        margin-left: 10%;
+    }
+    
+    #about, #gallery{
+        padding-right: 3%;
+        padding-left: 3%;  
+    }
+    
+    #me{
+        padding-top: 7pt;
+        padding-bottom: 7pt;
+        margin: 0;
+        margin-top: 13pt;
+        padding-left: 30%;
+    }
+    
+    #galleries{
+        margin: 0;
+        margin-top: 13pt;
+        padding-top: 7pt;
+        padding-bottom: 7pt;
+    } 
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------media 673*/
+@media screen and (max-width: 673px) {
+    #galleries{
+        margin: 0;
+        margin-top: 13pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+    } 
+    
+    #me{
+        padding-left: 25%;
+    }
+}
+    
+@media screen and (max-width: 573px) {
+
+    #me{
+        padding-left: 19%;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------media 480*/
+@media screen and (max-width: 480px) {
+    body{
+        position: relative;
+        margin: 0 auto;     
+        min-width: 320px;
+    }
+    
+    #gradient{
+        background: none;
+        box-shadow: none;
+        border: none;
+    }
+    
+    #mainContent{
+        max-width:95%;
+    }
+    
+    h1{
+        width: 100%;
+        font-size: 250%;
+        margin-bottom: 50pt;
+        margin-top: 0pt;
+        padding-left: 0;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0) 100%);
+    }
+    
+    header{
+        text-align: center;
+    }
+    
+    #logo { 
+        position: relative;
+        margin: 0 auto;
+        background-color: rgba(255,255,255, .2);
+        border-radius: 120pt;
+        padding: 0pt;
+        width: 50%;
+        top: 10pt;
+    }
+    
+    #home{
+        display: none;
+    }
+    
+    #drawing{
+        position: relative;
+        margin: 0 auto;
+        width: 100%;;
+    }
+    
+    #title{
+        width: 100%;
+    }
+    
+    nav {
+        position: relative;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 100%;
+        display: block;  
+    }
+    
+    nav ul{
+        background: none;
+        box-shadow: none;    
+    }
+    
+    nav li:hover>ul{
+        display: block;  
+    } 
+    
+    nav ul a{
+        font-size: 14pt;
+    }
+    
+    nav li{
+        font-size: 14pt;
+    }
+    
+    #here{
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+        border: 2pt solid rgba(255,255,255,0.25);
+    }
+
+    nav ul li{
+      margin: 0pt;
+      font-weight: bold;
+      display: block;
+      border: 2pt solid rgba(255,255,255,0.25);
+      margin-top: 10pt;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+      border: 1px solid #cca300;
+    }
+    nav li ul{
+        display: none; 
+        background: none;
+        /*visibility: visible;
+        opacity: 1;*/
+    }
+     
+    nav ul ul li{
+        padding: 7pt; 
+        border: none;
+    }
+    
+    #about{
+        padding-left: 0;
+        padding-right: 0;   
+    }
+
+    #galleries, #me{ 
+        padding-bottom: 0pt;
+        padding-top: 0pt;
+        position: relative;
+        margin: 0 auto;
+        border: none;
+    }
+    
+    #me{
+        padding-right: 0pt;
+        padding-left:0pt; 
+        margin-top: 5pt;
+    }
+    
+    #me li{
+        margin-left: 0;
+    }
+    
+    #galleries li{
+        margin-top: 5pt;
+    }
+    
+    #gallery{
+        padding-left: 0;
+        padding-right: 0;
+    }
+  
+    .line{
+        background: none;
+        box-shadow: none;
+        padding: 0pt;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .connectionsLogos{
+        width: 10%;
+    }
+    
+    footer{
+        margin-top: 45pt;
+        max-width: 100%;
+    }
+
+}
+

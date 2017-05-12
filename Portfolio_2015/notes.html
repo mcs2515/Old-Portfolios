@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8" />
+	<title>Megan's Portfolio</title>
+	<link REL="StyleSheet" TYPE="text/css" HREF="css/style.css">
+    <link REL="StyleSheet" TYPE="text/css" HREF="css/notesCSS.css">
+    <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" class="load"></script>
+    
+      <script>  
+		$(document).ready(function(){
+            console.log(window.location.pathname);
+            if(window.location.pathname == "/mcs2515/230/portfolio/notes.html"){
+                $("#notes").addClass("selected");
+            }
+        });   
+    </script>
+</head>
+    
+<body>
+	<!--#include file="header.shtml"-->
+    
+	<div id="mainContent">
+        <div id="title"> <h1>Notes</h1></div>
+        <div class="summary"> 
+            
+            <h3>Prototype 1 Difficulties</h3>
+            <p>The drop down menus are simple to use for the user to navigate between several pages of this website. However, it was one of the harder parts for the project to code. It took me over six hours to figure out why the sub menus were not working correctly. I finally figured out the answer which was to move the sub menu in the z-axis over the body content of the page.
+            
+            <h3>Prototype 2 Improvements</h3>
+            <p>I made the menu navigation bar a bit better, adding in an ease-in transition. I also formated the navbar to work on tablet screen sizes (now you have the full computer window view of this website, tablet view, and phone view with a dynamic navigation bar). Visitors are now able to see where they currently are in the navigatin bar. I fixed some issues where div boxes overlapped with other div boxes when the screen size got smaller. Images are now optimized for file size. There is now less space at the top of the page as well.
+            </p>
+            
+            <p>My dynamics page in the Contacts page. When the user clicks on the "Send Me Comments" the page will dynamically change to a another page that has a fill-out-form in which the viewer can send me comments.</p>
+            
+            <h3>Miscellany</h3>
+            <p>JQUERY and JavaScript was used in my imported lightbox effects for pictures and video files on my website. JavaScript was also used to change the description box under the images in the digital and tradtional galleries.</p>
+            
+            <p>For my above and beyond, I created the website logo from scratch, imported/used HTML and CSS code for light boxes from other web sources. I used Sketchfab to display my 3D model in real-time. Lastly, I used a software called IceCream Screen Recorder to record videos of my game being played.</p>
+            
+            <h3>HTACCESS Links</h3>
+           <p id="htaccess"> 
+               <a href="auth/myPage.html">Password Protected Directory</a>
+                <br>
+                <a href="uhhh.html">Custom 404</a>
+           </p>     
+              <br>
+            
+            <h3>Reference Code Used:</h3>
+            <hr class="style13">
+                <ul id="code">
+                    <li><a href="http://www.lokeshdhakar.com/projects/lightbox2/" target="_blank"> Image Lightbox </a></li>
+                    <li><a href="https://html5box.com/html5lightbox/#mydiv" target="_blank"> Video Lightbox </a></li>
+                </ul>
+            
+             <h3>Image Refereces:</h3>
+            <hr class="style13">
+                <ul id="list">
+                    <li> <a href="http://vignette2.wikia.nocookie.net/painttoolsai/images/4/46/AVERAGE.jpg/revision/latest?cb=20110320064700" target="_blank"> Paint Tool Sai Layout</a></li>
+                    <li> <a href="https://orig00.deviantart.net/a36b/f/2011/113/4/4/easy_paint_tool_sai_logo_by_omar6-d3epm9f.png" target="_blank"> Paint Tool Sai Icon</a></li>
+                    <li> <a href="http://k36.kn3.net/taringa/1/4/9/4/3/2/6/josephen/EF1.jpg?7378" target="_blank"> Photoshop Layout</a></li>
+                    <li> <a href="https://40.media.tumblr.com/3a95ed4894f7e20a138d812e940adbbc/tumblr_inline_o0ytheyBv71rrrwtj_540.png" target="_blank"> PhotoShop Icon</a></li>
+                    <li> <a href="http://render.ru/xen/attachments/img_1_large-jpg.206907/" target="_blank"> Maya Layout</a></li>
+                    <li> <a href="https://www.macupdate.com/images/icons256/8991.png" target="_blank"> Maya Icon</a></li>
+                    <li> <a href="https://processing.org/img/processing3-logo.png" target="_blank"> Processing Icon</a></li>
+                    <li> <a href="https://cdn1.iconfinder.com/data/icons/iconza-circle-social/64/697034-windows-visual-studio-512.png" target="_blank"> Visual Studios Icon</a></li> 
+                    <li> <a href="https://evilzone.org/applications/core/interface/imageproxy/imageproxy.php?img=http%3A%2F%2Fcdn.instructables.com%2FF50%2FOGJ8%2FI4CMKJBW%2FF50OGJ8I4CMKJBW.LARGE.jpg&key=e4c58a8dae76fe50eed845d3fed61fbd7f989c9cb4289d2cb39a48282311b92d" target="_blank"> Unity Layout</a>
+                    <li> <a href="https://lh3.googleusercontent.com/-FXKgGo41BAA/AAAAAAAAAAI/AAAAAAAAABM/Phnhtf1cbis/photo.jpg" target="_blank"> Unity Icon</a></li> 
+                    <li> <a href="https://secure.static.tumblr.com/1ebe44d1deeb7476b627cd8169a82b55/9gxd2p6/bEnnze4ry/tumblr_static_tumblr_static__640.gif" target="_blank"> Tubbs Gif</a></li> 
+                </ul> 
+        </div> 
+	</div>  
+    <!--#include file="footer.shtml"-->
+</body>
+</html>

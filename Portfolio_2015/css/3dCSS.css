@@ -1,0 +1,153 @@
+body{
+    overflow: visible;
+
+}
+
+#mainContent{
+    width: 100%;
+    z-index: 1;   
+    
+}
+
+h2{
+    margin-top: -20pt;
+    text-align: center;
+}
+
+#bamboo, #bunker, #chess{
+    position: relative;
+    margin: auto;
+    width: 65%;
+    height: 310pt;
+    text-align: center;
+    margin-bottom: 50pt;
+    margin-top: 30pt;
+    border-radius: 9pt;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+#bunker, #chess{
+    margin-top: 45pt;
+}
+
+iframe{
+    float: left;
+    margin: 0 auto;
+    width:50%;
+    height: 300pt;
+    max-width: 440pt;
+    min-width: 202pt;
+    margin-right: 10pt;
+    border-radius: 9pt;
+    border: 5pt solid rgba(255,255,255, .5);
+}
+
+.summary{
+    margin: 0 auto;
+    padding-top: 7%;
+    background: none;
+    text-align: left;
+}
+
+hr.style14 {
+	height: 2px;
+    width: 80%;
+	border: 0;
+	box-shadow: 0 10px 10px -10px rgba(255, 255, 255, 0.4) inset;
+}
+
+
+@media screen and (max-width: 930px) {
+    
+    #mainContent{         
+        width: 100%;
+    }
+    
+    iframe{
+        float: none;
+        position: relative;
+        margin: auto;
+        width:90%;
+        height: 200pt;
+        max-width: 440pt;
+        min-width: 202pt;
+    }
+    
+    .summary{
+        float: none;
+        position: relative;
+        margin: 0 auto;
+        width: 90%;
+        margin-top: 15pt;
+        background-color: rgba(0, 0, 0, 0.4);
+        text-align: left;
+    }
+    
+   
+    #bamboo, #bunker, #chess{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20pt;
+        background: none;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    
+    h2{
+        font-size: 25pt;  
+        margin-bottom: 0pt;
+    }
+}
+
+@media screen and (max-width: 480px) {
+   
+    #mainContent{         
+        width: 100%;
+    }
+    
+    .summary{
+        float: none;
+        position: relative;
+        margin: 0 auto;
+        width: 90%;
+        margin-top: 15pt;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .summary p{
+        padding-left: 0pt;
+        text-indent: 0;
+        text-align: center;
+    }
+    
+    h2{
+        margin-top: 0pt;
+        margin-bottom: 0pt;
+    }
+    
+    #bamboo, #bunker, #chess{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20pt;
+        background: none;
+    }
+    
+     #bunker, #chess{
+        margin-top: 20pt;
+    }
+    
+    iframe{
+        float: none;
+        position: relative;
+        margin: auto;
+        width:90%;
+        height: 200pt;
+        max-width: 440pt;
+        min-width: 202pt;
+        border-radius: 9pt;
+        border: 5pt solid rgba(255,255,255, .5);
+    }
+    
+}

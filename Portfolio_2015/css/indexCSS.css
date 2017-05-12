@@ -1,0 +1,32 @@
+#mainContent{
+   width: 90%;
+   z-index: 1;
+   text-align: center; 
+}
+
+.summary{
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+        text-align: left;
+}
+
+@media screen and (max-width: 930px) {
+    #mainContent{
+        width: 85%;
+    }
+    
+    .summary{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 480px){ 
+    .summary{
+        width: 95%;
+    }
+    
+    .summary p{
+        padding-left: 0;
+    }
+}

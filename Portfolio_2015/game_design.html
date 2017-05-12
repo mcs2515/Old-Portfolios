@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8" />
+	<title>Megan's Portfolio</title>
+	<link REL="StyleSheet" TYPE="text/css" HREF="css/style.css">
+    <link REL="StyleSheet" TYPE="text/css" HREF="css/gamesCSS.css">
+    <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0">
+    <script type="text/javascript" src="html5lightbox/jquery.js"></script>
+    <script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
+    
+    <script>
+    
+        function init(){
+            document.getElementById('desc1').style.display = "none";
+            document.getElementById('desc2').style.display = "none";
+            document.getElementById('desc3').style.display = "none";
+            document.getElementById('desc4').style.display = "none";
+        }
+        
+        function display(descNum, display)
+        {
+            if(display == "none")
+            {
+                document.getElementById("directions").style.display = "block";
+                //console.log("NONE");
+            }
+            else{
+                document.getElementById("directions").style.display = "none";
+                //console.log("BLOCK");
+            }
+            document.getElementById(descNum).style.display= display;
+
+            //console.log(descNum);
+            //console.log(display);
+        }
+        
+        window.onload = init;
+        
+        $(document).ready(function(){
+        console.log(window.location.pathname);
+        if(window.location.pathname == "/mcs2515/230/portfolio/games.html"){
+            $("#games").addClass("selected");
+            $("#gallery").addClass("selected");
+        }
+    });
+    </script>
+</head>
+    
+<body>
+	<!--#include file="header.shtml"-->
+    
+	<div id="mainContent">
+        <div id="title"> <h1>Game Design</h1></div> 
+        
+        <div class="thumbnails">
+            <a href="media/firefly.mp4" class="html5lightbox" data-group="mygroup" data-thumbnail="media/firefly_thumb.png" title="Night Firefly"> <img class="thumbs" src="media/firefly_thumb.png" alt="" onmouseover="display('desc1', 'block')" onmouseout="display('desc1', 'none')" /></a>
+
+            <a href="media/asteroids.mp4" class="html5lightbox" data-group="mygroup" data-thumbnail="media/asteroids_thumb.png" title="Asteroids"> <img class="thumbs" src="media/asteroids_thumb.png" alt="" onmouseover="display('desc2', 'block')" onmouseout="display('desc2', 'none')"/></a>
+
+            <a href="media/turtle_game.mp4" class="html5lightbox"  data-group="mygroup" data-thumbnail="media/turtle_thumb.png" title="To be Determined by Combat"> <img class="thumbs" src="media/turtle_thumb.png" alt="" onmouseover="display('desc3', 'block')" onmouseout="display('desc3', 'none')"/></a>
+            
+            <a href="media/sushi.mp4" class="html5lightbox"  data-group="mygroup" data-thumbnail="media/sushi_thumb.png" title="Sushi Escape"> <img class="thumbs" src="media/sushi_thumb.png" alt="" onmouseover="display('desc4', 'block')" onmouseout="display('desc4', 'none')"/></a>
+        </div>
+        
+        <div  class="descriptions" id="directions"> 
+            <h2> Click the Icons!</h2>
+            <p>Hover over the thumbnails to get a short description of the game. Click the thumbnail and you get to see a demo of it! </p>
+        </div>
+
+        <div  class="descriptions" id="desc1"> 
+            <h2> Night Firefly</h2>
+            <p>Mainly practiced coding perlin noise to create a simple scene in Processing. Perlin noised was used for the firefly's movemnt. Made in fall of 2015.</p>
+        </div>
+
+        <div  class="descriptions" id="desc2"> 
+            <h2> Asteroids</h2>
+            <p>Game created in Processing 3. Learned to code circle collision detection, acceleration, and deceleration to give the ship some realistic movement. Made in spring of 2016.</p>
+        </div>
+
+        <div  class="descriptions" id="desc3"> 
+            <h2> TBD by Combat</h2>
+            <p>Group project made in Microsoft Visual Studio. Game mechanics invovles inputing battle commands during planning phase and watching the commands execute on screen. Made in fall of 2015.</p>
+        </div>  
+        
+        <div  class="descriptions" id="desc4"> 
+            <h2> Sushi Escape</h2>
+            <p>A 2D Sh'ump game that was made in Unity. Drew all game assets and the opening animation. Goal was to make an opening scene with a creative back story for the game.</p>
+        </div>
+	</div> 
+        <!--#include file="footer.shtml"-->
+    </body>
+</html>

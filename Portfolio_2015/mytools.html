@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8" />
+	<title>Megan's Portfolio</title>
+	<link REL="StyleSheet" TYPE="text/css" HREF="css/style.css">
+    <link REL="StyleSheet" TYPE="text/css" HREF="css/toolsCSS.css">
+    <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" class="load"></script>
+
+  <script>  
+    $(document).ready(function(){
+        console.log(window.location.pathname);
+        if(window.location.pathname == "/mcs2515/230/portfolio/mytools.html"){
+            $("#myTools").addClass("selected");
+            $('#about').addClass("selected");
+        }
+    });   
+</script>
+</head>
+
+<body>
+	<!--#include file="header.shtml"-->
+
+    <div id="mainContent">
+        <div id="title"> <h1>My Tools</h1></div>
+        
+        <h2 id="designSoft">Design Softwares:</h2>
+        <br class="space">
+        <br class="space">
+        
+        <div class="tool">
+            <img  class="softwares" id="ps" src="media/PSicon.png" alt="Photoshop Logo" width="256" height="256">
+            <img  class="layout" src="media/PSlayout.jpg" alt="Photoshop" width="1280" height="720">
+
+            <div class="desc"> 
+                <h2> Adobe Photoshop</h2>
+                <p>A powerful art software. It's easy to feel overwhelmed with how many tools Photoshop provides. I mainly use photoshop for visual effects and to mess around with hues and contrast of my art pieces. I mainly use photoshop to manipulate and edit photos and scans of my artwork. </p>
+            </div>
+        </div>
+        <hr class="style14">
+        
+        <div class="tool">
+            <img class="softwares" id="sai"  src="media/SAIicon.png" alt="Paint Tool Sai Logo" width="256" height="256">
+            <img class="layout" src="media/SAIlayout.jpg" alt="Paint Tool Sai" width="1078" height="735">
+
+            <div class="desc"> 
+                <h2> Paint Tool Sai</h2>
+                <p>This software is not well known as Photoshop. I prefer to use Paint Tool Sai over Photoshop as Sai makes it a lot easier for the user to start drawing on the digital canvas. It has fewer tools and visual effects as Photoshop, however, Sai is a lot simpler and has a user interface that's easy to learn.  I use sai to draw and color in my digital art pieces.</p>
+            </div>
+        </div>
+        <hr class="style14">
+        
+        <div class="tool">
+            <img  class="softwares" id="maya" src="media/MAYAicon.png" alt="Maya Logo" width="256" height="256">
+            <img  class="layout" src="media/MAYAlayout.jpg" alt="Autodesk Maya" width="1280" height="720">
+
+            <div class="desc"> 
+                <h2> Autodesk Maya</h2>
+                <p>Maya is a well-known software for artists who want to create 3D objects and animate them. This is precisely the reason why I use Maya. I enjoy taking a simple polygon and turning it into something that is much more complex. I think texturing each 3D models is the least exciting part of my project.</p>
+            </div>
+        </div>
+        <hr class="style14">
+        
+        <div class="tool">
+            <img  class="softwares" id="unity" src="media/Unityicon.png" alt="Unity Logo" width="256" height="256">
+            <img  class="layout" src="media/Unitylayout.png" alt="Autodesk Maya" width="1280" height="720">
+
+            <div class="desc"> 
+                <h2> Unity</h2>
+                <p>Unity allows the user to import 2D or 3D assets and add code to them in a scene. I have a a bit of experience adding code to my assets for certain actions to happen when specific conditions are met.</p>
+            </div>
+        </div>
+        <hr class="style14">
+        
+        
+        <h2 id="codeSoft">Coding Softwares:</h2>
+        <br>
+        <br>
+        
+        <div class="tool">
+            <img id="process"  src="media/processIcon.png" alt="MS Visual Studio Logo" width="256" height="256">
+            <div class="desc"> 
+                <h2 class= "software"> Processing 3</h2>
+                <p>This software allows for users to code within "the context of visual arts and visual literacy within technology". I like to code in Processing much more than Visual Studios. It provides artist, like me, a better understanding what of is going on in the code through visual effects.</p>
+            </div>
+        </div>
+        <hr class="style14">
+
+        
+        <div class="tool">
+            <img id="visual" src="media/visual.png" alt="Microsoft Visual Studio" width="256" height="256">
+
+            <div class="desc"> 
+                <h2 class= "software"> Microsoft Visual Studio</h2>
+                <p>This is the sofware that I learned to code C#. All my games were coded as a console application. Some of my games were coded in MonoGame which is an extention to Visual Studio. </p>
+            </div>
+        </div>
+	</div>  
+        <!--#include file="footer.shtml"-->
+</body>
+</html>

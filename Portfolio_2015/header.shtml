@@ -1,0 +1,38 @@
+<header>
+        <div id="space"></div>
+        <div id="logo"><a id="index" href="index.html"><img id="drawing" src="media/hex.png" alt="Logo"  width="1800" height="1692"/></a></div>				
+        <div id="gradient"></div>
+	<nav id="mainMenu">
+		<ul>
+			<li id="about">About Me
+				<ul id="me">
+				<li><a id="myTools" href="mytools.html"> My Tools</a></li>
+                    <li class="line"></li>
+                <li><a href="media/SmithMegan_Resume.pdf" target="_blank"> My Resume</a></li>				
+				</ul>
+			</li>
+         
+            <li><a id="contact" href="contact.html"> Contact Me</a></li>
+           
+            <li id="home"><a href="index.html">Home</a></li>
+            
+            <li><a id="notes" href="notes.html"> Notes</a></li>
+
+			<li id="gallery"> Galleries
+				<ul id="galleries">
+				<li><a href="digital_design.html">Digital Design</a></li>
+                    <li class="line"></li>
+				<li><a  href="traditional_art.html">Traditional Art</a></li>
+                    <li class="line"></li>
+				<li><a  href="game_design.html">Game Design</a></li>
+                    <li class="line"></li>
+<!--
+				<li><a href="3D_modeling.html">3D Modelling</a></li>
+                    <li class="line"></li>
+-->
+				<li><a href="web_design.html">Web Design</a></li>
+				</ul>
+			</li>
+		</ul>		
+	</nav>
+</header>

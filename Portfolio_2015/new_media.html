@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8" />
+	<title>Megan's Portfolio</title>
+	<link REL="StyleSheet" TYPE="text/css" HREF="css/style.css">
+    <link REL="StyleSheet" TYPE="text/css" HREF="css/webCSS.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" class="load"></script>
+    
+      <script>  
+		$(document).ready(function(){
+            console.log(window.location.pathname);
+            if(window.location.pathname == "/mcs2515/230/portfolio/web%20design.html"){
+                $("#webDesign").addClass("selected");
+                $("#gallery").addClass("selected");
+            }
+        });   
+    </script>
+</head>
+
+<body>
+	<!--#include file="header.shtml"-->
+    
+    <div id="mainContent">
+        <div id="title"> <h1>Web Design</h1></div>
+        
+        <img  class="monsters" src="media/monsters_menu.png" alt="Monsters and Ladders Menu" width="475" height="854">
+        <img  class="next" src="media/misc/next.png" alt="Monsters and Ladders Menu" width="50" height="45">
+        <img  class="monsters" src="media/monsters_options.png" alt="Monsters and Ladders Game" width="475" height="854">
+        <img  class="next" src="media/misc/next.png" alt="Monsters and Ladders Options" width="50" height="45">
+        <img  class="monsters" src="media/monsters_game.png" alt="Monsters and Ladders Game" width="475" height="854">
+        
+        <div class="thumbs">
+            <a class="example-image-link" href="media/monsters_menu.png" data-lightbox="example-set" data-title="Monsters Main Menu"><img class="example-image" src="media/monsters_menu_thumb.jpg" alt=""/></a>         
+            <a class="example-image-link" href="media/monsters_options.png" data-lightbox="example-set" data-title="Monsters Options Menu"><img class="example-image" src="media/monsters_options_thumb.jpg" alt=""/></a>
+            <a class="example-image-link" href="media/monsters_game.png" data-lightbox="example-set" data-title="Monsters Game"><img class="example-image" src="media/monsters_game_thumb.jpg" alt=""/></a>
+        </div>
+        
+        <div class="summary"> 
+            <h2> Monsters and Ladders</h2>
+            <p>A spin-off of the board game, "Shoots and Ladders". If the game was real, this is what the design layout out would look like for the game's main, options, and play states. The goal of the game is to climb up as many ladders to earn points until the monster or nightmare catches up with the player. Made in fall of 2015.</p>
+        </div>
+        <hr class="style14">
+        
+        <img  id="stars" src="media/stars.jpg" alt="Monsters and Ladders Menu" width="916" height="1024">
+        <img  class="next" src="media/misc/next.png" alt="Monsters and Ladders Menu" width="50" height="45">
+        <img  id="starsr" src="media/stars_response.jpg" alt="Monsters and Ladders Game" width="450" height="897">
+        
+        <div class="thumbs">
+            <a class="example-image-link" href="media/stars.jpg" data-lightbox="example-set" data-title="Stars in a Jar Website"><img class="example-image" src="media/stars_thumb.jpg" alt=""/></a>    
+            <a class="example-image-link" href="media/stars_response.jpg" data-lightbox="example-set" data-title="Stars in a Jar Responsive Design"><img class="example-image" src="media/stars_response_thumb.jpg" alt=""/></a>       
+        </div>
+
+        
+        <div class="summary"> 
+            <h2> Stars in a Jar Web Tutorial</h2>
+            <p>Stars in a Jar is a website that I designed for anyone who is interested in learning how to make paper stars. The design and layout are very simple to follow and friendly to viewers of different age and gender. The image on the right is the normal web layout full screen. The image on the right is the responsive design for the website if the viewer was looking at the website on a mobile device.</p>
+        </div>
+        <hr class="style14">
+        
+        
+        <img  class="carebag" src="media/carebags1.jpg" alt="Monsters and Ladders Menu" width="612" height="756">
+        <img  class="next" src="media/misc/next.png" alt="Monsters and Ladders Menu" width="50" height="45">
+        <img  class="carebag" src="media/carebags2.jpg" alt="Monsters and Ladders Game" width="612" height="756">
+        
+        <div class="thumbs">
+            <a class="example-image-link" href="media/carebags1.jpg" data-lightbox="example-set" data-title="Comfort Carebags ver.1"><img class="example-image" src="media/carebags1_thumb.jpg" alt=""/></a> 
+            <a class="example-image-link" href="media/carebags2.jpg" data-lightbox="example-set" data-title="Comfort Carebags ver.2"><img class="example-image" src="media/carebags2_thumb.jpg" alt=""/></a>       
+        </div>
+        
+        
+        <div class="summary"> 
+            <h2> Comfort Carebags Web Design</h2>
+            <p>This is the design layout of a made-up organization's website, Comfort Carebags. This was a group project and my job was to design the website's page layouts. The image on the left was the first design for the homepage of Comfort Carebags. The image on the left is the second design of the organization's homepage which became the official design layout of the website. I experimented different layouts and color schemes. Made in fall of 2015.</p>
+        </div>
+        
+        
+	</div>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <!--#include file="footer.shtml"-->
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0">
+	<title>Megan's Portfolio</title>
+	<link REL="StyleSheet" TYPE="text/css" HREF="css/style.css">
+    <link REL="StyleSheet" TYPE="text/css" HREF="css/traditionalCSS.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" class="load"></script>
+
+    <script>
+    
+        function init(){
+            document.getElementById('desc1').style.display = "none";
+            document.getElementById('desc2').style.display = "none";
+            document.getElementById('desc3').style.display = "none";
+            document.getElementById('desc4').style.display = "none";
+            document.getElementById('desc5').style.display = "none";
+            document.getElementById('desc6').style.display = "none";
+            //document.getElementById('desc7').style.display = "none";
+        }
+        
+        function display(descNum, display)
+        {
+            if(display == "none")
+            {
+                document.getElementById("directions").style.display = "block";
+                //console.log("NONE");
+            }
+            else{
+                document.getElementById("directions").style.display = "none";
+                //console.log("BLOCK");
+            }
+            document.getElementById(descNum).style.display= display;
+
+        }
+        
+        window.onload = init;
+        
+        $(document).ready(function(){
+            console.log(window.location.pathname);
+            if(window.location.pathname == "/mcs2515/230/portfolio/traditional.html"){
+                $("#traditional").addClass("selected");
+                $("#gallery").addClass("selected");
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <!--#include file="header.shtml"-->
+
+    <div id="mainContent">
+        <div id="title"> <h1>Traditional Art</h1></div>
+        
+        <div>
+          <a class="example-image-link moveOver" href="media/battle_clouds.jpg" data-lightbox="example-set" data-title="Battle Clouds"><img class="example-image" src="media/battle_clouds_thumb.jpg" alt="" onmouseover="display('desc1', 'block')" onmouseout="display('desc1', 'none')"/></a>
+          
+          <a class="example-image-link moveOver" href="media/crystal_deer.jpg" data-lightbox="example-set" data-title="Crystal Deer"><img class="example-image" src="media/crystal_deer_thumb.jpg" alt="" onmouseover="display('desc2', 'block')" onmouseout="display('desc2', 'none')"/></a>
+          
+          <a class="example-image-link moveOver" href="media/stormy_seas.jpg" data-lightbox="example-set" data-title="Stormy Seas"><img class="example-image" src="media/stormy_seas_thumb.jpg" alt="" onmouseover="display('desc3', 'block')" onmouseout="display('desc3', 'none')"/></a>
+          
+          <a class="example-image-link moveOver" href="media/rain_clouds.jpg" data-lightbox="example-set" data-title="Rain Clouds"><img class="example-image" src="media/rain_clouds_thumb.jpg" alt="" onmouseover="display('desc4', 'block')" onmouseout="display('desc4', 'none')"/></a>
+          
+          <a class="example-image-link moveOver" href="media/the_snake.png" data-lightbox="example-set" data-title="The Snake and the Forbidden Fruit"><img class="example-image" src="media/the_snake_thumb.jpg" alt="" onmouseover="display('desc5', 'block')" onmouseout="display('desc5', 'none')"/></a>
+            
+          <a class="example-image-link moveOver" href="media/Valkyrie.jpg" data-lightbox="example-set" data-title="Valkyrie"><img class="example-image" src="media/Valkyrie_thumb.jpg" alt="" onmouseover="display('desc6', 'block')" onmouseout="display('desc6', 'none')"/></a>
+        </div>
+        
+        <div class = "descriptions" id="directions"> 
+            <h2> Click the Icons!</h2>
+            <p>Hover over the thumbnails to get a short description of the game. Click the thumbnail and you get to see a demo of it! </p>
+        </div>
+
+        <div class = "descriptions" id="desc1"> 
+            <h2> Battle Clouds</h2>
+            <p>Art piece made with chalk pastel on paper. Focused on creating soft and hard edges to create clouds of contrasting colors. Made in spring of 2014.</p>
+        </div>
+
+        <div class = "descriptions" id="desc2"> 
+            <h2> Crystal Deer</h2>
+            <p>Created the mythical deer with stylized lines with acrylic paint on cardboard. Goal was to blend paint and create a background. Made in spring of 2014.</p>
+        </div>
+
+        <div class = "descriptions" id="desc3"> 
+            <h2> Stormy Seas</h2>
+            <p>Art piece was inspired by the Greek mythology, Hero and Leander. Experimented with shadows and shading in this piece. Made in fall of 2013</p>
+        </div>
+
+        <div class = "descriptions"  id="desc4"> 
+            <h2> Rain Clouds</h2>
+            <p> Experimented with soft and hard edges through the use of watercolors. Later, enhanced with Photoshop. Made in spring of 2014.</p>
+        </div>
+
+        <div class = "descriptions" id="desc5"> 
+            <h2 id="snake"> Snake and the Forbidden Fruit</h2>
+            <p>Art piece made with acrylic paint on circular canvas. Theme is based on the story of Adam and Eve  Made in 2013.</p>
+        </div> 
+
+        <div class = "descriptions" id="desc6"> 
+            <h2> Valkyrie</h2>
+            <p>Created on a white card board box with water colors. Goal was creating subtle patterns in the background and to improve watercoloring skills. Made in spring of 2014.</p>
+        </div> 
+
+    </div>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <!--#include file="footer.shtml"-->
+</body>
+</html>

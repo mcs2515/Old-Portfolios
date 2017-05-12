@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8" />
+	<title>Megan's Portfolio</title>
+	<link REL="StyleSheet" TYPE="text/css" HREF="css/style.css">
+    <link REL="StyleSheet" TYPE="text/css" HREF="css/contactCSS.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" class="load"></script>
+    
+    <script>
+        $( document ).ready(function() {
+          //social link click event listener function
+                $("#email").on("click", function(e){
+                    $("#formContent").fadeIn();
+                    $("#formTitle").fadeIn();
+                    $("#return").fadeIn();
+                    $("#mainContent").fadeOut();
+
+                    $("#return").removeClass("selected");
+                    $("#email").addClass("selected");
+
+                } );
+                //about link click event listener function
+                $("#return").on("click", function(e){
+                    $("#mainContent").fadeIn();
+                    $("#formContent").fadeOut();
+                    $("#formTitle").fadeOut();
+                    $("#return").fadeOut();
+
+                    $("#email").removeClass("selected");
+                    $("#email").addClass("selected");
+                } );     
+        });
+        
+        $(document).ready(function(){
+        console.log(window.location.pathname);
+        if(window.location.pathname == "/mcs2515/230/portfolio/contact.html"){
+            $("#contact").addClass("selected");
+        }
+    });   
+    </script>
+</head>
+    
+<body>
+	<!--#include file="header.shtml"-->   
+    <div id="mainContent">
+        <h1>Contact Me</h1>
+         
+        <img id="myself" src="media/me.png" alt="Megan Smith" width="480" height="480">
+        <div class="summary">
+            <p> Email is the most effective way of contacting me. I will always reply back via email. I am a bit shy over the phone and I often do not pick up for unknown phone numbers. So please email me first! </p>
+            <p>Why contact me? Let me know what I can to do better. Tell me what you like or do not like about my projects. Give me suggestions on how to improve. Importantly contact me if there is anything that I can do for you!</p>
+            <br>
+            <div id="message">
+                <a class="selected" id="email" href="#">Send Me Comments </a>
+                <p id="phone">Cell Phone Number: (585) 905-4078</p>
+            </div>
+        </div>
+	</div>
+    
+    <h1 id="formTitle">Email Me</h1>
+    <div id="formContent">
+         
+        <form method="POST" action="formmail.php" name="myform">
+            <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+            <input type="hidden" name="recipients" value="mcs2515@rit.edu" />
+            <input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
+            <input type="hidden" name="subject" value="Sample FormMail Testing" />
+            <input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" />
+            <input type="hidden" name="mail_options" value="Exclude=email;realname" />
+              <fieldset>
+                <legend>Send Your Comments:</legend>
+                  <br>
+                Your Name:<br>
+                <input type="text" name="FullName" placeholder="Full name please" value="" required>
+                  <br>  
+                  <br>
+                Email Address: <br>
+                  <input type="email" name="EmailAddr" placeholder="Enter a valid email address" required>
+                  <br>
+                  <br>
+                Gender: <br>
+                  <input name="gender" type="radio" /> Male <br>
+                  <input name="gender" type="radio" /> Female <br>
+                  <input name="gender" type="radio" /> Other <br>
+                  <input name="gender" type="radio" /> Not Say <br>
+                  <br>    
+
+                Your Comments: <br>
+                <textarea name='comment' id='comment' placeholder="Enter your comment(s) here" ROWS=6 COLS=80></textarea>
+                  <br>
+                  <br>
+                <input id= "sendB" type="submit" value="Send">
+              </fieldset>
+        </form>
+    </div>  
+        <div id="return"><a  id="link" href="#">Return </a></div>
+        <!--#include file="footer.shtml"-->
+    </body>
+</html>

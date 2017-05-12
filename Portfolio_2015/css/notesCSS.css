@@ -1,0 +1,66 @@
+#mainContent{      
+    z-index: 1;
+}
+
+h3{
+    margin-bottom: 0;
+    text-indent: 20pt;
+}
+
+#code, #list{
+    margin-left: 20pt;
+}
+
+.summary a{
+    color:darkgrey;   
+}
+
+.summary a:hover{
+    color: #81751E;
+}
+
+a{    
+    text-decoration: none;
+    font-weight: bold;
+}
+
+hr.style13 {
+    margin-top: 0pt;
+	height: 2px;
+    width: 94%;
+	border: 0 ;
+	box-shadow: 0 10px 10px -10px rgba(255, 255, 255, 0.4) inset;
+    border-color: #cca300;
+}
+
+#title{
+    width: 95%;
+}
+
+#htaccess{
+    text-indent: 0pt;
+    text-align: center;
+}
+
+@media screen and (max-width: 930px) {
+    #mainContent{         
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+     #mainContent{         
+        width: 95%;
+    }
+    
+    h3{
+        text-indent: 0pt;
+        text-align: center;
+    }
+    
+    #yolo{
+        text-indent: 0pt;
+        text-align: center;
+    }
+}

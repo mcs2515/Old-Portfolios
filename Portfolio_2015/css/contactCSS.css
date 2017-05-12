@@ -1,0 +1,136 @@
+#mainContent{
+ text-align: center;
+ z-index: 5;
+}
+
+.summary{  
+    margin-top: 20pt; 
+    text-align:left; 
+}
+
+#message{
+    text-align: center;
+}
+
+h1{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15pt;
+}
+
+#myself{
+    width: 35%;
+    height: auto;
+    border: 3pt solid #81751E;
+    border-radius: 180pt;
+    z-index: 1;
+    box-shadow: 12px 12px 15px rgba(0,0,0, .5);
+}
+
+#phone{
+    font-weight: bold;
+    text-indent: 0pt;
+}
+
+#link, #email{
+    text-decoration: none;
+    color: rgba(0, 35, 122, 0.5);
+    font-weight: bold;
+    text-indent: 0pt;
+}
+
+#return:hover{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 80%);
+}
+
+#link:hover{
+    color: rgba(0, 35, 122, 0.7);
+}
+
+#email:hover{
+    color: #81751E;
+}
+
+#return{
+    width: 100%;
+    font-size: 28px;
+    display: none;
+    margin: 0 auto;
+    margin-top: 10pt;
+    text-align: center;
+}
+
+#email{
+    font-size: 18px;
+    color:darkgrey;
+}
+
+#formTitle{ 
+    text-align: center; 
+    display: none;
+    width: 55%;
+}
+
+#formContent{
+    border-radius: 20pt;
+    padding-top: 20pt;
+    padding-bottom: 10pt;
+    color:darkgrey;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    margin: 0 auto;
+    display: none;
+    max-width: 750px;
+    width: 70%   
+}
+
+#sendB{
+    float: right;
+}
+
+fieldset{
+    position: relative;
+    margin: 0 auto;
+    width: 10%;
+    border: none;
+}
+
+textarea{
+    resize: both;
+}
+
+@media screen and (max-width: 930px) {
+    #formContent, #mainContent{
+        width: 95%;
+    }
+    textarea{
+         width: 255pt;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+    #myself{
+        margin-top: -5pt;
+        width: 50%;
+    }
+    
+    #formTitle{
+         width: 100%;
+    }
+    
+    .summary p{
+        padding-left: 0;
+    }
+    
+    #formContent{
+        width: 95%   
+    }
+    
+    textarea{
+        width: 185pt;
+    }
+    
+}
+
